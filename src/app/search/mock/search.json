@@ -1,0 +1,132 @@
+[
+    {
+        "search" : "khea",
+        "playlists": [
+            {
+                "img":"https://i.ibb.co/DkBVcNC/ab67706f00000002b37bc6b6a5c624691df2cb50.jpg",
+                "title":"This is: KHEA"
+            },
+            {
+                "img":"https://i.ibb.co/1d9PyrF/Sin-t-tulo.png",
+                "title":"KHEA Radio"
+            },
+            {
+                "img":"https://i.ibb.co/PCqWzc0/ab67706f00000002c10f0d03a78b121b459730c1.jpg",
+                "title":"¡Viva Latino!"
+            },
+            {
+                "img":"https://i.ibb.co/6WCWG2B/ab67706f00000002aade2f84b36613140a4ffe0e.jpg",
+                "title":"Cachengue en casa"
+            },
+            {
+                "img":"https://i.ibb.co/QCVF8Ts/ab67706f000000025ffc36370c0825c6114bd466.jpg",
+                "title":"Calma"
+            }
+        ],
+        "artists" : [
+            {
+                "img":"https://i.ibb.co/MPgQMnx/8130e70162ded2c19d67e2ae71772bc373fe0334.jpg",
+                "title":"KHEA"
+            }
+        ]
+    },
+
+
+    {
+        "search" : "metallica",
+        "playlists": [
+            {
+                "img":"https://i.ibb.co/wgjLWGN/download.jpg",
+                "title":"This is: Metallica"
+            },
+            {
+                "img":"https://i.ibb.co/D12gQwW/ab67706f00000002aee3725842339caac9857f0d.jpg",
+                "title":"Heavy metal"
+            },
+            {
+                "img":"https://i.ibb.co/fMK6VXm/ab67616d00001e021cc6d15e607e0a514b7f4b95.jpg",
+                "title":"Metallica sm 1&2"
+            }
+        ],
+        "artists" : [
+            {
+                "img":"https://i.ibb.co/QjLtGwt/5a06711d7fc48d5e0e3f9a3274ffed3f0af1bd91.jpg",
+                "title":"Metallica"
+            },
+            {
+                "img":"https://i.ibb.co/9rdXF5m/6a698afb1465ad279389e3fb0a5f80b79bc486d9.jpg",
+                "title":"Metallicash"
+            },
+            {
+                "img":"https://i.ibb.co/V9RW2h5/ab67616d0000b2730baa189d8d5e6ca03a5adfed.jpg",
+                "title":"Spartan Metallica"
+            },
+            {
+                "img":"https://i.ibb.co/4FG8GWm/ab67616d0000b2734d388832a65bb2021dff13f3.jpg",
+                "title":"Idra Metallica"
+            }
+        ]
+    },
+
+
+    {
+        "search" : "megadeth",
+        "playlists": [
+            {
+                "img":"https://i.ibb.co/w6V0P7X/ab67706f00000003741a49c373e610c6ae05dc60.jpg",
+                "title":"This is: Megadeth"
+            },
+            {
+                "img":"https://i.ibb.co/wyy1B2V/ab67706c0000bebb8c049090f53a145d4b162b71.jpg",
+                "title":"Megadeth complete edition"
+            },
+            {
+                "img":"https://i.ibb.co/Zfw8Xxh/ab67616d0000b273e949e0e6c9eac438a68f5b37.jpg",
+                "title":"So far, So Good..."
+            },
+            {
+                "img":"https://i.ibb.co/zFmJyFt/ab67616d0000b273db38819ff1e73809f8be6107.jpg",
+                "title":"Dystopsia"
+            }
+        ],
+        "artists" : [
+            {
+                "img":"https://i.ibb.co/0rBjpbq/fdbf93704b51d1b96df59e762060ed45c420b6d6.jpg",
+                "title":"Megadeth"
+            }
+        ]
+    },
+
+    
+    {
+        "search" : "bad-bunny",
+        "playlists": [
+            {
+                "img":"https://i.ibb.co/F5kLcMF/ab67706f000000031477d5bed03b58733c7ec16e.jpg",
+                "title":"This is: Bad Bunny"
+            },
+            {
+                "img":"https://i.ibb.co/m62XTts/d38ab9f3f911ebe591eec51e7822a337df4b4e8e.jpg",
+                "title":"Bad Bunny y las Maravillas"
+            },
+            {
+                "img":"https://i.ibb.co/qL6ZgC0/ab67706f000000031c93253f24e4c177691fd8a2.jpg",
+                "title":"Mansion Reggaeton"
+            },
+            {
+                "img":"https://i.ibb.co/RpszjC1/568921edde686df0fe2bb992873f64306d35981b.jpg",
+                "title":"Bad Bunny"
+            },
+            {
+                "img":"https://i.ibb.co/LCtqrYq/4489ca5d58ac6d289fa8995ae131cb76738b61cc.jpg",
+                "title":"Bad bunny la sensación"
+            }
+        ],
+        "artists" : [
+            {
+                "img":"https://i.ibb.co/4sVkCmm/23009960c33ef08d5973440cca17985a6c70a515.jpg",
+                "title":"Bad Bunny"
+            }
+        ]
+    }
+]

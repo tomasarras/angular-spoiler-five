@@ -1,0 +1,30 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12%;
+}
+
+.lista-canciones {
+    margin-top: 10%;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.playlists {
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width: 900px) {
+    h1, .playlists {
+        margin-bottom: 3%
+    }
+
+    .lista-canciones {
+        margin-top: 3%;
+    }
+
+}

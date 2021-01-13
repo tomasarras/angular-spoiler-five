@@ -1,0 +1,21 @@
+<div class="row title-cards">
+    <div class="flex title-cards">
+        <h2 class="black" [ngClass]="{ 'clickable':title.clickable }">{{title.title}}</h2>
+        <div *ngIf="title.clickable">
+            <img width="20" height="20" src="assets/icons/arrow-title.svg">
+        </div>
+    </div>
+    <div class="arrows pointer">
+        <img class="arrow-back icon-medium" (click)="back(divCards)" [ngClass]="{ 'disabled-arrow': first }" src="assets/icons/back-arrow.svg">
+        <img class="arrow-back icon-medium" (click)="next(divCards)" [ngClass]="{ 'disabled-arrow': last || scrollDisabled }" src="assets/icons/back-arrow.svg">
+    </div>
+</div>
+
+<div #divCards class="horizontal-scroll">
+    <div class="cards">
+        <div *ngFor="let card of cards" class="shadow-card card pointer" (click)="see(card)">
+            <img src='{{card.img}}' alt="card">
+            <span class="title">{{card.title}}</span>
+        </div>
+    </div>
+</div>

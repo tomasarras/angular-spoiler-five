@@ -1,0 +1,77 @@
+[
+    {
+      "title":"Today's Top Hits",
+      "img":"https://i.ibb.co/W5tTvfx/spotify-img.jpg",
+      "link":"playlist/1"
+    },
+    {
+      "title": "playlist1",
+      "img":"assets/others/default-playlist.svg",
+      "link":"playlist/2"
+    },
+    {
+      "title": "playlist2",
+      "img":"assets/others/default-playlist.svg",
+      "link":"playlist/3"
+    },
+    {
+      "title":"Cachengue en casa",
+      "img":"https://i.ibb.co/6WCWG2B/ab67706f00000002aade2f84b36613140a4ffe0e.jpg",
+      "link":"playlist/4"
+    },
+    {
+      "title": "playlist3",
+      "img":"assets/others/default-playlist.svg",
+      "link":"playlist/5"
+    },
+    {
+      "title":"Hits acusticos",
+      "img":"https://i.ibb.co/fkjtWxL/ab67706f000000028fc71e2599fb11d381046c9d.jpg",
+      "link":"playlist/6"
+    },
+    {
+      "title":"Canta en la ducha",
+      "img":"https://i.ibb.co/0nLbvfm/ab67706f000000029482a47d9687733e9271176f.jpg",
+      "link":"playlist/7"
+    },
+    {
+      "title":"Hits Alegres",
+      "img":"https://i.ibb.co/LtQ9gsP/ab67706f0000000246038a402592bf87174a8442.jpg",
+      "link":"playlist/8"
+    },
+    {
+      "title":"Modo acústico",
+      "img":"https://i.ibb.co/HPMcMp0/ab67706f000000023034208bb3dc61b40aa9e91b.jpg",
+      "link":"playlist/9"
+    },
+    {
+      "title":"Hora de la Lloración",
+      "img":"https://i.ibb.co/9vgD3NX/ab67706f000000025dda570f43926bcbfb397c17.jpg",
+      "link":"playlist/10"
+    },
+    {
+      "title":"Indie Argentina",
+      "img":"https://i.ibb.co/rmw8Wzf/ab67706f000000020f189280da541cd3e6e10cef.jpg",
+      "link":"playlist/11"
+    },
+    {
+      "title":"Rock Argentino",
+      "img":"https://i.ibb.co/S38tY3T/ab67706f00000002e08f1248c3c7e250225c3813.jpg",
+      "link":"playlist/12"
+    },
+    {
+      "title":"La Previa",
+      "img":"https://i.ibb.co/fDKMp5k/ab67706f00000002658c867eeff08584ab273ba6.jpg",
+      "link":"playlist/13"
+    },
+    {
+      "title":"Mate Relax",
+      "img":"https://i.ibb.co/fvhLcgW/ab67706f00000002373a52c05d01c8fe298eda2e.jpg",
+      "link":"playlist/14"
+    },
+    {
+      "title":"Feelin Good",
+      "img":"https://i.ibb.co/0FwSzsY/ab67706f0000000213a02d059c0479e65a850267-1.jpg",
+      "link":"playlist/15"
+    }
+]

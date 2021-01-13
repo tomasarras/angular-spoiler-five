@@ -1,0 +1,63 @@
+<footer *ngIf="!hide">
+  <img *ngIf="currentSong.img != ''; else margin" class="pointer" (click)="openSong()" id="song-img" src="{{currentSong.img}}">
+  <ng-template #margin>
+    <div class="margin"></div>
+  </ng-template>
+  <div class="content">
+    <div class="flex-start">
+      <div (click)="openSong()" class="song-name pointer">{{currentSong.name}}</div>
+      <img class="icon-medium favorite pointer switch" (click)="favorite()" src="assets/icons/favorite-song.svg" [ngClass]="{ 'enabled':fav }">
+      <img class="icon-medium favorite pointer switch" (click)="favorite()" src="assets/icons/favorite-song-filled.svg" [ngClass]="{ 'enabled':!fav }">
+      
+      <div class="player-bar">
+        <span class="start">{{currentSong.currentDuration}}</span>
+        <span class="end">{{currentSong.duration}}</span>
+        <div class="bar">
+          <div class="pointer" #progressSong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="previous"><img class="icon-medium" src="assets/icons/next-song.svg"></div>
+
+      <div class="play pointer">
+        <img class="icon-medium switch" src="assets/icons/play.svg" (click)="playPause()" [ngClass]="{ 'enabled':play }">
+        <img class="icon-medium switch" src="assets/icons/pause.svg" (click)="playPause()" [ngClass]="{ 'enabled':!play }">
+      </div>
+
+      <div><img class="rotate icon-medium next" src="assets/icons/next-song.svg"></div>
+    </div>
+
+    <div class="right-icons">
+
+      <div class="volume pointer">
+        <img class="icon-medium" (click)="openVolume()" src="assets/icons/volume.svg">
+
+        <div class="volume-bar" [ngClass]="{ 'enabled': volumeBar }">
+          <div class="bar"><div class="pointer"></div></div>
+          <img src="assets/icons/volume-bar.svg">
+        </div>
+      </div>
+
+      <div class="playlist"><img class="icon-medium" src="assets/icons/add-to-playlist.svg"></div>
+      <div class="star">
+        <div class="calification-background" [ngClass]="{ 'enabled':califications }">
+          <img src="assets/icons/calification-background.svg">
+          <div class="calification-stars">
+            <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+            <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+            <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+            <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+            <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+          </div>
+        </div>
+        <img class="icon-medium pointer" (click)="openCalification()" src="assets/icons/star.svg">
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+</footer>

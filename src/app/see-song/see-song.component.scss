@@ -1,0 +1,300 @@
+section {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+section.disabled {
+  opacity: 0;
+}
+
+.section-calificar.active {
+  left: 0;
+}
+
+.section-calificar {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -102%;
+  transition: left .3s ease-out;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  margin: 0 5%;
+}
+
+.title {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  overflow: hidden;
+  margin: 0 3%;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#song-image {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+h1 {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.stars {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 7% 0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.player-bar-div {
+  position: fixed;
+  bottom: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.player-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+  
+.player-bar .bar {
+  position: relative;
+  background-color: #c4c4c4;
+  width: 95%;
+  height: 6px;
+  border-radius: 6px;
+  top: 35%;
+}
+
+.bar .pointer {
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: -50%;
+}
+
+.player-bar .start, .player-bar .end{
+  color: black;
+  position: absolute;
+  top: 150%;
+}
+
+.player-bar .start {
+  left: 0;
+}
+
+.player-bar .end {
+  left: 90%;
+}
+
+.player-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 5vh;
+}
+
+img.switch {
+  display: none;
+}
+
+.switch.enabled {
+  display: block;
+}
+
+.volume-bar {
+  position: absolute;
+  top: -600%;
+  opacity: 0;
+  transition: opacity .3s;
+  cursor: initial;
+}
+
+.volume-bar.enabled {
+  opacity: 1;
+}
+
+.volume-bar .bar {
+  width: 6px;
+  background-color: #c4c4c4;
+  height: 80%;
+  position: absolute;
+  left: 35%;
+  top: 7%;
+  border-radius: 6px;
+  cursor: initial;
+}
+
+.volume-bar .bar .pointer {
+  top: 90%;
+  left: -50%;
+}
+
+
+@media screen and (max-width:330px) , screen and (max-height: 630px) {
+  #song-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+
+
+.flex {
+    display: flex;
+}
+
+.description {
+    margin-left: 5%;
+    width: 400px;
+    color: black ;
+}
+
+section {
+    margin-right: 3%;
+}
+
+  #song-image {
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+  }
+
+  
+
+  .icons {
+    margin-top: 7%;
+    justify-content: space-between;
+}
+
+
+ #title {
+        position: absolute;
+        overflow-x: hidden
+    }
+  
+  #description {
+      margin-top: 20%;
+      width: 100%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px;
+  }
+
+  #calificacion {
+    
+    margin-top: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    padding-right: 10px;
+    padding-left: 14px;
+  }
+
+  .comments {
+    width: 50%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px;
+      color: black;
+  }
+
+  .star {
+    margin-top: 8%;
+    padding-right: 10px;
+}
+
+  .three-dots {
+      position: absolute;
+      top: 2%;
+      left: 90%;
+  }
+
+  .background-califications {
+    transition: opacity .3s;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 100% 20% 0 20%;
+    height: 81.6px;
+    width: 297.6px;
+    background-image: url("../../assets/others/background-stars.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120%;
+    left: -415%;
+  }
+
+  .background-califications.active {
+      opacity: 1;
+  }
+
+}
+
+.desktop {
+  margin-bottom: 7%;
+}
+
+.options {
+  padding: 20% 20%;
+  background-image: url("../../assets/others/background-options-song.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 148px;
+  height: 85px;
+  position: relative;
+  top: -100%;
+  left: -430%;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.options.active {
+  opacity: 1;
+}
+
+.container-options {
+  width: 32px;
+  height: 32px;
+}

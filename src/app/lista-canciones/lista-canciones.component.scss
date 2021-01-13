@@ -1,0 +1,167 @@
+.imagen-cancion, .imagen {
+    width: 49px;
+    height: 49px;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+.imagen {
+    padding-right: 30px;
+}
+
+.linkeable:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.black, h2 {
+    color: black;
+}
+
+thead th {
+    border-bottom: 3px solid black;
+}
+
+.title {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.tabla-cancion {
+    min-width: 630px;
+    width: 93%;
+    border-collapse:separate; 
+    border-spacing: 0 50px;
+}
+
+.tabla-cancion td {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.tabla-cancion td:first-of-type {
+    width: 20px;
+    padding-left: 2%;
+}
+
+.tabla-cancion td:last-of-type {
+    padding-right: 2%;
+}
+
+tr.song {
+    transition: .3s ease-out;
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+    transition: .3s ease-out;
+}
+
+tr.song:hover {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+    transform: scale(1.05);
+}
+
+.tabla-cancion {
+    margin-left: 3%;
+}
+
+td {
+    color: black;
+}
+
+.margen {
+    width: 164px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.raya {
+    width: 98%;
+    height: 1px;
+    border: 1px solid #000000;
+}
+
+.row-stars {
+    display: flex;
+    gap: 10px;
+}
+
+.reproduciendo {
+    width: 60px;
+    min-width: 60px;
+}
+
+.titles {
+    color: black;
+}
+
+.nombre {
+    width: 20vw;
+}
+
+.artista {
+    width: 15vw;
+}
+
+.album {
+    width: 15vw;
+}
+
+.duracion {
+    width: 10vw;
+}
+
+.calificacion {
+    width: 15vw;
+}
+
+td.nombre, td.album {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td.artista {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+
+    .title {
+        margin-left: 4%;
+    }
+
+    h2 {
+        margin-left: 0px;
+    }
+
+    .horizontal-scroll {
+        overflow-x: scroll;
+        width: 100vw;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+
+    td.artista, td.duracion, td.calificacion, td.album {
+        padding-left: 20px;
+    }
+
+    .imagen {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .row.title {
+        width: 90%;
+    }
+
+}

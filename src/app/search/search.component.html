@@ -1,0 +1,7 @@
+<div class="filters">
+    <app-filtrar></app-filtrar>
+</div>
+<div class="flex-column">
+    <app-cards [cards]="playlists" [artist]="false" [title]="titlePlaylist"></app-cards>
+    <app-cards [cards]="artists" [artist]="true" [title]="titleArtist"></app-cards>
+</div>

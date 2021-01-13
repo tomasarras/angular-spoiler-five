@@ -1,0 +1,20 @@
+[
+  {
+    "img":"https://i.postimg.cc/w3NJ9c9G/ab67616d00001e02f46b9d202509a8f7384b90de.jpg",
+    "nombre":"Sorry",
+    "artista":"Justin Bieber",
+    "album":"Purpose",
+    "duracion": "3:20",
+    "calificacion": 5,
+    "link" : "song/12"
+  },
+  {
+    "img":"https://i.postimg.cc/JGWX0Dn4/ab67616d00001e0260036f58bbb4b25a7a6f2712.jpg",
+    "nombre":"Mood (remix)",
+    "artista":"24kGoldn",
+    "album":"Mood",
+    "duracion": "3:12",
+    "calificacion": 4,
+    "link" : "song/13"
+  }
+]

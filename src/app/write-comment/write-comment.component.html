@@ -1,0 +1,27 @@
+<section>
+    <div class="flex">
+        <img class="icon-large user-icon" src="assets/icons/user-icon.svg" alt="user">
+
+        <div class="flex-column auto">
+            <div class="header flex">
+                <h2>Tu</h2>
+
+                <div class="stars" #divStars>
+                    <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="1" alt="star">
+                    <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="2" alt="star">
+                    <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="3" alt="star">
+                    <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="4" alt="star">
+                    <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="5" alt="star">
+                </div>
+            </div>
+
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+
+            <div class="flex end">
+                <div id="comment-btn">
+                    <app-btn [title]="'Comentar'"></app-btn>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

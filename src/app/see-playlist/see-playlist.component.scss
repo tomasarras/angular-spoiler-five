@@ -1,0 +1,173 @@
+.content {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex, .flex-stars {
+    display: flex;
+}
+
+.description {
+    margin-left: 3%;
+    color: black;
+}
+
+h3#calification {
+    margin-right: 4%;
+}
+
+section {
+    margin-right: 3%;
+    margin-bottom: 6%;
+}
+
+.img-playlist {
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+}
+
+.icons {
+    margin-top: 7%;
+    justify-content: space-between;
+}
+
+.icon-star {
+    position: relative;
+}
+
+.background-califications {
+    transition: opacity .3s;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 100% 20% 0 20%;
+    height: 81.6px;
+    width: 297.6px;
+    background-image: url("../../assets/others/background-stars.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120%;
+    left: -415%;
+}
+
+.stars {
+    display: flex;
+    gap: 10px;
+}
+
+.background-califications.active {
+    opacity: 1;
+}
+
+.options {
+    padding: 5% 20%;
+    background-image: url("../../assets/others/background-options.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 3%;
+    flex-direction: column;
+    width: 80px;
+    height: 60px;
+    position: relative;
+    top: -8%;
+    left: -90%;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.options.active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #title {
+        position: absolute;
+        top: 2%;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #description {
+        margin-top: 10%;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons.flex {
+        width: 300px;
+        flex-direction: row;
+    }
+
+    .three-dots {
+        position: absolute;
+        top: 2%;
+        left: 90%;
+    }
+
+    section {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .icons.flex {
+        width: 280px;
+        flex-direction: row;
+    }
+
+    .img-playlist {
+        width: 280px;
+        height: 280px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .icons.flex {
+        width: 200px;
+        flex-direction: row;
+    }
+
+    .img-playlist {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+}

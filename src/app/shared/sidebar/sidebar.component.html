@@ -1,0 +1,38 @@
+<img src="assets/icons/back-arrow.svg" class="back-icon d-none d-lg-block icon-medium pointer" (click)="sidenavToggle.toggle()">
+<div class="d-none d-lg-block">
+  <div class="ml-3 mr-3">
+    <div class="mt-5">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mt-3">
+          <img src="assets/icons/my-playlists-icon.svg" class="icon">
+          <span class="ml-2">Mis playlists</span>
+        </li>
+        <li class="nav-item mt-3">
+          <img src="assets/icons/recomendations-icon.svg" class="icon">
+          <a href="#" class="nostyle" [routerLink]="['/recommendations']">
+            <span class="ml-2">Recomendaciones para ti</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <img src="assets/icons/suggestions.svg" class="icon">
+          <a href="#" class="nostyle" [routerLink]="['/suggestions']">
+            <span class="ml-2">Sugerencias</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <img src="assets/icons/favorites.svg" class="icon">
+          <span class="ml-2">Mis Favoritos</span>
+          <div class="mt-2">
+            <ul>
+              <li>Playlists</li>
+              <li>Albumes</li>
+              <li>Canciones</li>
+              <li>Artistas</li>
+              <li>Podcasts</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

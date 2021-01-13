@@ -1,0 +1,10 @@
+<section>
+    <div class="flex center">
+        <img (click)="close()" id="arrow" width="20" height="20" src="assets/icons/arrow-title.svg">
+        <h1  (click)="close()" class="clickable">Opina</h1>
+    </div>
+    <app-write-comment></app-write-comment>
+    <div *ngFor="let user of users">
+        <app-comment [username]="user.username" [comment]="user.comment" [calification]="user.calification"></app-comment>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+@import "src/styles";
+
+ul {
+  list-style-type: none;
+}
+
+.back-icon {
+  height: 35px;
+  float: right;
+  margin: 7px;
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+}

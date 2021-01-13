@@ -1,0 +1,54 @@
+<section>
+    <div class="flex">
+        <img class="icon-large user-icon" src="assets/icons/user-icon.svg" alt="user">
+        
+        <div class="flex-column auto">
+            <div class="header flex">
+                <h2>{{username}}</h2>
+                
+                <div class="stars">
+                    <div class="star"  *ngFor="let element of counter(5); let i=index">
+                        <div *ngIf="compare(i); else normalStar">
+                            <img class="icon-small" src="assets/icons/star-filled.svg" alt="star">
+                        </div>
+                        
+                        <ng-template #normalStar>
+                            <img class="icon-small" src="assets/icons/star.svg" alt="star">
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            <p>{{comment}}</p>
+        </div>
+    </div>
+</section>
+<!--
+
+    <section>
+        <div class="flex">
+            <img class="icon-large user-icon" src="assets/icons/user-icon.svg" alt="user">
+            
+            <div class="flex-column auto">
+                <div class="header flex">
+                    <h2>Tu</h2>
+                    
+                    <div class="stars" #divStars>
+                        <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="1" alt="star">
+                        <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="2" alt="star">
+                        <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="3" alt="star">
+                        <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="4" alt="star">
+                        <img class="icon-small" (click)="changeStar($event)" src="assets/icons/star.svg" name="5" alt="star">
+                    </div>
+                </div>
+                
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+                
+                <div class="flex end">
+                    <div id="comment-btn">
+                        <app-btn [title]="'Comentar'"></app-btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->

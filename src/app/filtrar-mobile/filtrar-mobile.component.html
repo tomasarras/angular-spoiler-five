@@ -1,0 +1,57 @@
+<section class="section-filtrar animation-enter" #sectionFiltrar>
+    <img id="back-arrow" src="assets/icons/back-arrow.svg" (click)="close()">
+    <h2>Filtrar por</h2>
+    <ul>
+        <li>
+            <div class="title" (click)="openFilter($event)">
+                <h3>Genero</h3>
+                <img class="open-arrow" src="assets/icons/down-arrow.svg">
+            </div>
+            <div class="content">
+                <ul class="content-list">
+                    <mat-checkbox class="d-block" value="1">Pop</mat-checkbox>
+                    <mat-checkbox class="d-block" value="1">Rock</mat-checkbox>
+                    <mat-checkbox class="d-block" value="1">Jazz</mat-checkbox>
+                    <mat-checkbox class="d-block" value="1">Reggaeton</mat-checkbox>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <div class="title" (click)="openFilter($event)">
+                <h3>Decada</h3>
+                <img class="open-arrow" src="assets/icons/down-arrow.svg">
+            </div>
+            <div class="content">
+                <ul class="content-list">
+                  <label>Decada</label>
+                  <mat-checkbox class="d-block" value="1">80s</mat-checkbox>
+                  <mat-checkbox class="d-block" value="2">90s</mat-checkbox>
+                  <mat-checkbox class="d-block" value="3">00s</mat-checkbox>
+                  <mat-checkbox class="d-block" value="3">10s</mat-checkbox>
+                  <mat-checkbox class="d-block" value="3">20s</mat-checkbox>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <div class="title" (click)="openFilter($event)">
+                <h3>Duracion</h3>
+                <img class="open-arrow" src="assets/icons/down-arrow.svg">
+            </div>
+            <div class="content">
+                <ul class="content-list">
+                  <label>Calificación</label>
+                  <mat-checkbox class="d-block" value="1">1</mat-checkbox>
+                  <mat-checkbox class="d-block" value="2">2</mat-checkbox>
+                  <mat-checkbox class="d-block" value="3">3</mat-checkbox>
+                  <mat-checkbox class="d-block" value="4">4</mat-checkbox>
+                  <mat-checkbox class="d-block" value="5">5</mat-checkbox>
+                </ul>
+            </div>
+        </li>
+    </ul>
+  <div class="d-flex justify-content-center">
+  <button class="main-button text-center w-50">Aplicar filtros</button>
+  </div>
+</section>

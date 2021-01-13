@@ -1,0 +1,55 @@
+.row {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#filter-icon {
+    margin-right: 12px;
+}
+
+.black {
+    color: black;
+}
+
+::ng-deep .mat-select-arrow {
+  width: 0;
+  height: 0;
+  border-left: none !important;
+  border-right: 20px solid transparent !important;
+  border-top: 20px solid !important;
+  margin: 0 4px;
+  border-image-source: url("../../assets/icons/down-arrow.svg") !important;
+}
+
+::ng-deep mat-form-field {
+  transform: translate(0, 40%) scale(0.9);
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #454545 !important;
+}
+::ng-deep .mat-select-content {
+  width:2000px;
+  background-color: red;
+  font-size: 10px;
+}
+
+.radio-group {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+::ng-deep .mat-checkbox-background {
+  background-color: #454545 !important;
+}
+::ng-deep .mat-checkbox-checkmark-path {
+  stroke: #ffffff !important;
+}
+
+::ng-deep .mat-drawer-container {
+  color: black;
+}

@@ -1,0 +1,94 @@
+@import "src/variables";
+
+#back-arrow {
+    width: 25px;
+    height: 25px;
+    left: 164px;
+    top: 672px;
+    fill: white;
+    margin-left: 14.5%;
+}
+
+.open-arrow {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    transition: 0.3s;
+}
+
+.open-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+div.title {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+div.title, h2, .content-list {
+    padding: 0 14.5%;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.content.open {
+    max-height: 300px;
+}
+
+.content-list {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content-list li {
+    margin-bottom: 2%;
+}
+
+.section-filtrar, h2, ul {
+    padding-top: 8%;
+}
+
+.section-filtrar {
+    z-index: 10;
+    transition: .4s ease-out;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    color: white;
+}
+
+.animation-enter {
+  animation-name: appear-from-left;
+  animation-duration: 500ms;
+}
+
+.animation-hide {
+  animation-name: close;
+  animation-duration: 500ms;
+}
+
+@keyframes appear-from-left {
+  0% {
+    left:-100%
+  }
+  100% {
+    left: 0%;
+  }
+}
+

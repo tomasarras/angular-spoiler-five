@@ -1,0 +1,26 @@
+.filters {
+    margin-bottom: 10%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 5%;
+}
+
+.lista-canciones {
+    margin-top: 3%;
+}
+
+@media screen and (min-width: 600px) {
+    .filters {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .filters {
+        margin-bottom: 0;
+    }
+}

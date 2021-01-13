@@ -1,0 +1,40 @@
+<div>
+  <img (click)="showFilters()" id="filter-icon" class="pointer" src="assets/icons/filter.svg" alt="filtrar">
+  <span (click)="showFilters()" class="black pointer">Filtrar</span>
+</div>
+<div class="container">
+  <div *ngIf="show" [@slideOutUpOnLeave]="show" [@slideInDownOnEnter]="show">
+    <div class="row" class="d-none d-md-block col-md-12">
+      <h3>Filtros</h3>
+      <mat-form-field appearance="fill" class="col-md-4 mt-3">
+        <mat-label>Generos</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-option *ngFor="let topping of genres" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-radio-group aria-label="Decada" class="radio-group col-md-4">
+        <label>Decada</label>
+        <mat-checkbox value="1">80s</mat-checkbox>
+        <mat-checkbox value="2">90s</mat-checkbox>
+        <mat-checkbox value="3">00s</mat-checkbox>
+        <mat-checkbox value="3">10s</mat-checkbox>
+        <mat-checkbox value="3">20s</mat-checkbox>
+      </mat-radio-group>
+      <mat-radio-group aria-label="Calificacion" class="radio-group col-md-4">
+        <label>Calificación</label>
+        <mat-checkbox value="1">1</mat-checkbox>
+        <mat-checkbox value="2">2</mat-checkbox>
+        <mat-checkbox value="3">3</mat-checkbox>
+        <mat-checkbox value="4">4</mat-checkbox>
+        <mat-checkbox value="5">5</mat-checkbox>
+      </mat-radio-group>
+      <button class="main-button">Aplicar filtros</button>
+    </div>
+  </div>
+  <app-filtrar-mobile *ngIf="show"
+                      (onClose)="this.show = !this.show"
+                      [@slideOut]="show"
+                      class="d-md-none d-lg-none d-xl-none">
+  </app-filtrar-mobile>
+</div>
+

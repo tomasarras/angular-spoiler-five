@@ -1,0 +1,59 @@
+<section class="flex">
+    <div class="content flex">
+        <div class="center">
+            <img class="img-playlist" src="{{playlist.img}}" alt="playlist-image">
+            <div class="flex icons">
+
+                <img class="icon-medium" src="assets/icons/play.svg" alt="play">
+
+                <div class="icon-star icon-medium">
+                    <img (click)="toggle(div)" class="icon-medium star pointer" src="assets/icons/star.svg" alt="calificate">
+                    <div #div class="background-califications">
+                        <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+                        <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+                        <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+                        <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+                        <img (mouseenter)="starAnimation($event)" (mouseleave)="starAnimation($event)" class="icon-medium star" src="assets/icons/star.svg">
+                    </div>
+                </div>
+
+                <img class="icon-medium pointer" (click)="fav()" *ngIf="!favorite" src="assets/icons/favorite-song.svg" alt="favorite">
+                <img class="icon-medium pointer" (click)="fav()" *ngIf="favorite" src="assets/icons/favorite-song-filled.svg" alt="favorite">
+
+                <img class="icon-medium" src="assets/icons/share.svg" alt="share">
+
+            </div>
+        </div>
+        <div class="description">
+            <h1 id="title">{{playlist.title}}</h1>
+            <h2 id="description">{{playlist.description}}</h2>
+            <h3 *ngIf="playlist.views">Reproducciones: {{playlist.views}}</h3>
+            <div class="flex-stars">
+                <h3 id="calification">Calificacion: </h3>
+                
+                <div class="stars">
+                    <div class="star"  *ngFor="let element of counter(5); let i=index">
+                        <div *ngIf="compare(i); else normalStar">
+                            <img class="icon-small" src="assets/icons/star-filled.svg" alt="star">
+                        </div>
+                        
+                        <ng-template #normalStar>
+                            <img class="icon-small" src="assets/icons/star.svg" alt="star">
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img (click)="options(el)" class="three-dots icon-medium pointer" src="assets/icons/three-dots.svg" alt="see-more">
+        <div class="options" #el>
+            <span>Borrar</span>
+            <span>Editar</span>
+        </div>
+    </div>
+</section>
+
+<section *ngIf="playlist.songs.length > 0">
+    <app-lista-canciones [canciones]="playlist.songs" [title]="titleSongs"></app-lista-canciones>
+</section>

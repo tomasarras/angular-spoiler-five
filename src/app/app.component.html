@@ -1,0 +1,21 @@
+<app-navbar #navbar></app-navbar>
+<mat-sidenav-container class="height-100" [autosize]="true">
+  <mat-sidenav #sidenav mode="side" class="sidenav"
+               [fixedInViewport]="true" [fixedTopGap]="topGap"
+               [fixedBottomGap]="bottomGap">
+    <app-sidebar [sidenavToggle]="sidenav"></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="hidden-sidebar d-none d-lg-block">
+      <img src="assets/icons/down-arrow.svg" class="open-sidebar m-2 pointer" (click)="sidenav.toggle()">
+      <img src="assets/icons/my-playlists-icon.svg" class="icon m-2 pointer" matTooltip="Mis playlists" [matTooltipPosition]="'right'">
+      <img src="assets/icons/recomendations-icon.svg" class="icon m-2 pointer" matTooltip="Recomendadas para ti" [matTooltipPosition]="'right'" (click)="navigate('/recommendations')">
+      <img src="assets/icons/suggestions.svg" class="icon m-2 pointer" matTooltip="Sugerencias" [matTooltipPosition]="'right'" (click)="navigate('/suggestions')">
+      <img src="assets/icons/favorites.svg" class="icon m-2 pointer" matTooltip="Mis favoritos" [matTooltipPosition]="'right'">
+    </div>
+    <div class="padding-left">
+      <router-outlet class="ml-2"></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer #footer></app-footer>

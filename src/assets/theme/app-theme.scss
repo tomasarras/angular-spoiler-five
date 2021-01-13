@@ -1,0 +1,6 @@
+// All angular components should be added here
+@mixin app-theme($theme) {
+  @include mat-sidenav-theme($theme);
+  @include mat-select-theme($theme);
+  @include mat-input-theme($theme);
+}
