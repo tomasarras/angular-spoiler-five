@@ -11,7 +11,7 @@ Levantar aplicación
 
 ---
 
-[Deploy](https://tomasarras.github.io/spoiler-five/)
+[Deploy](https://tomasarras.github.io/angular-spoiler-five/)
 
 [Figma](https://www.figma.com/file/JpTud84nzncL1Rlv237l6m/interfaces-copia)
 
