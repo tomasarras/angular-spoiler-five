@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     this.titlePlaylist = {
       "title": "Tus playlists",
       "clickable":true,
-      "link": ""
+      "link": "my-playlists"
     }
 
     this.titlePodcast = {

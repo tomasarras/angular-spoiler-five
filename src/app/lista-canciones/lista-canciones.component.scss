@@ -1,6 +1,6 @@
 .imagen-cancion, .imagen {
-    width: 49px;
-    height: 49px;
+    width: 40px;
+    height: 40px;
 }
 
 h2 {
@@ -33,12 +33,12 @@ thead th {
     min-width: 630px;
     width: 93%;
     border-collapse:separate; 
-    border-spacing: 0 50px;
+    border-spacing: 0 10px;
 }
 
 .tabla-cancion td {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .tabla-cancion td:first-of-type {

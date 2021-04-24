@@ -8,7 +8,7 @@
   <mat-sidenav-content>
     <div class="hidden-sidebar d-none d-lg-block">
       <img src="assets/icons/down-arrow.svg" class="open-sidebar m-2 pointer" (click)="sidenav.toggle()">
-      <img src="assets/icons/my-playlists-icon.svg" class="icon m-2 pointer" matTooltip="Mis playlists" [matTooltipPosition]="'right'">
+      <img src="assets/icons/my-playlists-icon.svg" class="icon m-2 pointer" matTooltip="Mis playlists" [matTooltipPosition]="'right'" (click)="navigate('/my-playlists')">
       <img src="assets/icons/recomendations-icon.svg" class="icon m-2 pointer" matTooltip="Recomendadas para ti" [matTooltipPosition]="'right'" (click)="navigate('/recommendations')">
       <img src="assets/icons/suggestions.svg" class="icon m-2 pointer" matTooltip="Sugerencias" [matTooltipPosition]="'right'" (click)="navigate('/suggestions')">
       <img src="assets/icons/favorites.svg" class="icon m-2 pointer" matTooltip="Mis favoritos" [matTooltipPosition]="'right'">

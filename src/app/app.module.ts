@@ -31,6 +31,9 @@ import { WriteCommentComponent } from './write-comment/write-comment.component';
 import { BtnComponent } from './btn/btn.component';
 import { CommentComponent } from './comment/comment.component';
 import { SectionOpinionesMobileComponent } from './section-opiniones-mobile/section-opiniones-mobile.component';
+import { SectionMyPlaylistsComponent } from './section-my-playlists/section-my-playlists.component';
+import { GreenButtonComponent } from './green-button/green-button.component';
+import { GridCardsComponent } from './grid-cards/grid-cards.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { SectionOpinionesMobileComponent } from './section-opiniones-mobile/sect
     WriteCommentComponent,
     BtnComponent,
     CommentComponent,
-    SectionOpinionesMobileComponent
+    SectionOpinionesMobileComponent,
+    SectionMyPlaylistsComponent,
+    GreenButtonComponent,
+    GridCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { SeePlaylistComponent } from './see-playlist/see-playlist.component';
 import { SeeSongComponent } from './see-song/see-song.component';
 import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { SectionMyPlaylistsComponent } from './section-my-playlists/section-my-playlists.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'song/:id', component: SeeSongComponent },
   { path: 'recommendations', component:  RecommendationsComponent },
   { path: 'suggestions', component:  SuggestionsComponent },
+  { path: 'my-playlists', component:  SectionMyPlaylistsComponent },
 ];
 
 @NgModule({

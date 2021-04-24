@@ -11,6 +11,10 @@ section.disabled {
   left: 0;
 }
 
+section.header, .comments {
+  margin-left: 3%;
+}
+
 .section-calificar {
   position: absolute;
   width: 100vw;

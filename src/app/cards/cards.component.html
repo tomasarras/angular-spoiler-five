@@ -1,6 +1,6 @@
 <div class="row title-cards">
     <div class="flex title-cards">
-        <h2 class="black" [ngClass]="{ 'clickable':title.clickable }">{{title.title}}</h2>
+        <h2 class="black" [ngClass]="{ 'clickable':title.clickable }" (click)="link(title.link)">{{title.title}}</h2>
         <div *ngIf="title.clickable">
             <img width="20" height="20" src="assets/icons/arrow-title.svg">
         </div>

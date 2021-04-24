@@ -75,5 +75,11 @@ export class CardsComponent implements OnInit {
   see(card) {
     this.router.navigate([card.link]);
   }
+  
+  link(link) {
+    if (link != "") {
+      this.router.navigate([link]);
+    }
+  }
 
 }

@@ -1,0 +1,7 @@
+
+<div class="cards">
+    <div *ngFor="let card of cards" class="shadow-card card pointer" (click)="see(card)">
+        <img src='{{card.img}}' alt="card">
+        <span class="title">{{card.title}}</span>
+    </div>
+</div>
